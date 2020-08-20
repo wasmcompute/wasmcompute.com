@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="noun_code_3477752" transform="translate(-2 -2)">
+    <g id="Group_1487" data-name="Group 1487">
+      <path id="Path_1132" data-name="Path 1132" d="M57,10H54V5a3,3,0,0,0-3-3H13a3,3,0,0,0-3,3v5H7a5.006,5.006,0,0,0-5,5V45a5.006,5.006,0,0,0,5,5H23.867l-.75,6H22a2,2,0,0,0-2,2v2H18v2H46V60H44V58a2,2,0,0,0-2-2H40.883l-.75-6H57a5.006,5.006,0,0,0,5-5V15A5.006,5.006,0,0,0,57,10ZM12,10H52V35a1,1,0,0,1-1,1H13a1,1,0,0,1-1-1Zm1-6H51a1,1,0,0,1,1,1V8H12V5A1,1,0,0,1,13,4ZM7,12h3V35a3,3,0,0,0,3,3H51a3,3,0,0,0,3-3V12h3a3,3,0,0,1,3,3V40H4V15a3,3,0,0,1,3-3ZM42,60H22V58H42Zm-3.133-4H25.133l.75-6H38.117ZM57,48H7a3,3,0,0,1-3-3V42H60v3A3,3,0,0,1,57,48Z" fill="#a48fe2"/>
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="2" height="2" transform="translate(55 44)" fill="#a48fe2"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="2" height="2" transform="translate(14 5)" fill="#a48fe2"/>
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="2" height="2" transform="translate(18 5)" fill="#a48fe2"/>
+      <rect id="Rectangle_17" data-name="Rectangle 17" width="2" height="2" transform="translate(22 5)" fill="#a48fe2"/>
+      <path id="Path_1133" data-name="Path 1133" d="M25.293,20.707l1.414-1.414L24.414,17l2.293-2.293-1.414-1.414-3,3a1,1,0,0,0,0,1.414Z" fill="#a48fe2"/>
+      <path id="Path_1134" data-name="Path 1134" d="M38.707,20.707l3-3a1,1,0,0,0,0-1.414l-3-3-1.414,1.414L39.586,17l-2.293,2.293Z" fill="#a48fe2"/>
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="10.77" height="2.001" transform="translate(29.071 21.628) rotate(-68.193)" fill="#a48fe2"/>
+      <rect id="Rectangle_19" data-name="Rectangle 19" width="2" height="2" transform="translate(20 24)" fill="#a48fe2"/>
+      <rect id="Rectangle_20" data-name="Rectangle 20" width="6" height="2" transform="translate(24 24)" fill="#a48fe2"/>
+      <rect id="Rectangle_21" data-name="Rectangle 21" width="4" height="2" transform="translate(22 28)" fill="#a48fe2"/>
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="4" height="2" transform="translate(28 28)" fill="#a48fe2"/>
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="12" height="2" transform="translate(18 32)" fill="#a48fe2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+@startuml
+state "State" as State
+
+[*] --> ServerCli
+ServerCli --> State
+State --> WebServer
+
+
+state "Start Web Server" as WebServer {
+  state "Accept Request" as Accept
+  [*] --> Accept
+  Accept --> Authenticate
+  Authenticate --> IsWasm
+  IsWasm --> ValidateUrl
+  ValidateUrl --> Controller
+  IsWasm --> Controller
+  
+}
+@enduml

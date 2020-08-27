@@ -123,6 +123,40 @@ wasmcompute-cli me
 
 ### Prepare
 
+To prepare for an application to be uploaded, send a post request containing
+your wasmcompute.yaml file. Send the post request here to:
+
+```bash
+POST https://wasmcompute.com/api/account/:account_name/app/:app_name/prepare/:version
+```
+
+Once the application is prepared, the webserver will response back with a 200 OK
+response and contain a json object with the request id to use to upload the app.
+
 ### Upload
 
+Now that wasmcompute knows you are about to upload an application, it will start
+to package up your app into a zip file. Once zipped, the file will be uploaded to
+wasmcompute servers and decompressed. Send your request to:
+
+```bash
+PUT https://wasmcompute.com/api/account/:account_name/app/:app_name/upload/:version
+HEADER X-APP-UPLOAD-ID: <upload-id>
+```
+
+Once the application has been successfully uploaded, the webserver will response
+back with a 200 OK response and contain a json object with what the server did.
+Example would be like, uploaded these files to these locations.
+
 ### Deploy
+
+Once a version has been uploaded, deploying it is super easy. Start by hitting
+the following url:
+
+```bash
+POST https://wasmcompute.com/api/account/:account_name/app/:app_name/deploy/:version
+```
+
+Once the deployment has been staged, it will response back with a 200 OK response
+and contain the changes that are planned to update from the old version app currently
+deployed to the new version that was just deployed.

@@ -2,6 +2,11 @@
 
 This document contains the design of the web server.
 
+## Futures Research
+
+- Using locking code inside of an async environment, i.e. Why can we not use the standard std::sync::Mutex inside of an async environment? https://users.rust-lang.org/t/std-mutex-vs-futures-mutex-vs-futures-lock-mutex-for-async/41710/4
+- Why are we using DashMap inside of our WasmCore? Why do we require it to access a mut refernce to our hashmap and what are the performance implications of using a RwLock? https://www.reddit.com/r/rust/comments/eopxq5/announcing_dashmap_v3_taking_concurrent_hashmaps/
+
 ## URL
 
 Once users have uploaded and deployed an application to wasmcompute, they can
@@ -65,6 +70,7 @@ server. Publishing a version though may come with some down sides like:
 ## Routes
 
 - [Web Server Design](#web-server-design)
+  - [Futures Research](#futures-research)
   - [URL](#url)
   - [Wasm Project Configuration](#wasm-project-configuration)
   - [Versioning an application on wasmcompute](#versioning-an-application-on-wasmcompute)

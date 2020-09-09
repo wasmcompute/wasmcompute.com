@@ -27,6 +27,7 @@ to handle all the different threads being executed pre request.
     - [Cache](#cache)
     - [Web Requests](#web-requests)
     - [Helper functions](#helper-functions)
+  - [Library Implementation](#library-implementation)
 
 ## Library functionality
 
@@ -49,7 +50,7 @@ fn handle(mut res: Response, mut req: Request) -> Result<Response, dyn std::erro
     // ... handle the request
 
     // let res = Response::redirect("http://google.com")
-    let res = Response::new()::builder()
+    let res = Response::new()
         .header("foo", "bar")
         .header("bar", "foo")
         .body(())
@@ -153,4 +154,23 @@ fn main() -> std::io::Result<()> {
     let file: File = static_file!("/i_do_exist.txt");
     let file: TemplateFile = template_file!("/i_do_exist.html");
 }
+```
+
+## Library Implementation
+
+Although the library provides a nice wrapper around functionality that is offered
+by the host program (web server), we still need a nice way for the host program
+to implement what is offered. A quick and dirty solution would be to just import
+any host functionality into the WasmCore struct. Though this solution requires us
+to always reload the server which isn't always totally wanted.
+
+Though i find it hard to come up with any other solution that solves our problem.
+
+If we are going to do it this way, we should be using the library inside of our
+host program as well.
+
+```rust
+let core = WasmCore::new();
+let func = |caller: Caller, a: i32, b: i32, ... | { ... };
+core.add_host_func(func);
 ```

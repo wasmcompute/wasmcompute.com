@@ -83,6 +83,7 @@ server. Publishing a version though may come with some down sides like:
     - [Prepare](#prepare)
     - [Upload](#upload)
     - [Deploy](#deploy)
+  - [Applications](#applications)
 
 ## Authentication
 
@@ -166,3 +167,44 @@ POST https://wasmcompute.com/api/account/:account_name/app/:app_name/deploy/:ver
 Once the deployment has been staged, it will response back with a 200 OK response
 and contain the changes that are planned to update from the old version app currently
 deployed to the new version that was just deployed.
+
+## Applications
+
+All applications that are deployed to `wasmcompute` has a couple of guarantees.
+
+1. You are given a persistent Key-Value Store (local)
+2. You are given a persistent Database (sqlite)
+3. You are given a http client to accept web requests
+4. You are given a web client to make http requests
+
+All applications that are deployed to `wasmcompute` are given the same folder
+structure as well.
+
+```bash
+.
+└── <account>
+    └── <application>
+        ├── database/db.sqlite
+        ├── filesystem/<...user-file...>.<any>
+        ├── logs/<...>.log
+        └── versions
+            ├── *.*.*-<version>
+            ├── *.*.*-<version>
+            └── *.*.*-<version>
+                ├── static/***
+                ├── migrations/***
+                ├── applications/***
+                ├── README.md
+                ├── wasmcompute.yaml
+                └── <application>.wasm
+```
+
+Inside of the `/database` folder contains the sqlite database that the application
+will be connected to.
+
+The `/filesystem` folder is what the user sees as his/her filesystem.
+
+The `/logs` folder contains all the logs that the user has produced.
+
+The `/versions` folder has all of the application the user has uploaded to the
+server. Each version can contain a couple of different files.

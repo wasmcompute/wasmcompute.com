@@ -1,94 +1,137 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #1F1F1F;
     color: #fafafa;
     font-family: 'Roboto', sans-serif;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
 }
 
-nav{
+nav {
     height: 7rem;
     padding-left: 10%;
     /* box-shadow: 1px 2px 10px #8169C7; */
 }
-.navigation{
+
+.navigation {
     list-style-type: none;
     float: right;
     padding-right: 10%;
     padding-top: 2rem;
 }
-.navigation >li{
+
+.navigation>li {
     display: inline;
     margin: 1rem;
 }
-.navigation >li>a{
+
+.navigation>li>a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
-p{
+
+p {
     font-size: 1.2rem;
 }
-a{
+
+a {
     color: #a48fe2;
     font-size: 1.2rem;
 }
-li{
+
+li {
+    list-style-type: disc;
     font-size: 1.2rem;
     line-height: 2rem;
     margin-top: 1rem;
     max-width: 25rem;
 }
-form{
+.footer-nav>  li {
+list-style-type: none;
+
+}
+.footer-nav {
+padding-left: 0%;
+}
+.footer-nav>  li >a{
+    text-decoration: none;
+}
+form {
     font-size: 1.2rem;
 }
-input{
+
+input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #8169C7;
-color: #929292;
-font-size: 1.2rem;
-margin: auto 1rem;
-width: 200px}
-.logo{
+    color: #929292;
+    font-size: 1.2rem;
+    margin: auto 1rem;
+    width: 200px
+}
+
+.logo {
     padding: 1.5rem;
     width: 70px;
 }
-.hero{
+
+.hero {
     width: 100%;
 }
-.hero-text{
-    margin-top:5rem;
+
+.hero-text {
+    margin-top: 5rem;
     max-width: 40rem;
 }
-.hero-img{
+
+.hero-img {
     max-height: 600px;
     max-width: 600px;
 }
-.grid{
+
+.grid {
     display: grid;
 }
-.col-2{
+
+.col-2 {
     grid-template-columns: 1fr 1fr;
 }
-.col-3{
+
+.col-3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
-.w-80{
+
+.w-80 {
     margin: 5% 10% 5rem;
     width: 80%;
 }
-.primary{
+.w-70 {
+    margin: 5% 13% 5rem;
+    width: 70%;
+}
+.w-50 {
+    margin: 5% 25% 5rem;
+    width: 50%;
+}
+.w-30 {
+    margin: 5% 35% 5rem;
+    width: 30%;
+}
+
+.primary {
     background-color: #8169C7;
     padding: 1rem;
     font-size: 1rem;
@@ -98,37 +141,125 @@ width: 200px}
     margin: 1rem 1rem 1rem 0;
 
 }
-.img-divider{
+
+.img-divider {
     width: 110%;
     margin-left: -100px;
 }
 
-.no-overflow{
+.no-overflow {
     overflow: hidden;
 
 }
-.centered{
+
+.centered {
     text-align: center;
     display: block;
 }
-.icon{
+
+.icon {
     width: 100px;
-}.mt-10{
-    margin-top: 10rem;
-}
-.mt-5{
-    margin-top: 5rem;
-}
-.mt-4{
-    margin-top: 4rem;
-}
-.mt-3{
-    margin-top: 3rem;
 }
 
-.number{
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+.mb-5{
+    margin-bottom: 5rem;   
+}
+
+.number {
     background-color: #8169C7;
     display: inline;
     padding: 1rem 1.5rem;
     border-radius: 50%;
+}
+
+/* console css */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+p.console {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+header.terminal {
+    background: #E0E8F0;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 10px;
+}
+
+.terminal-container header .button {
+    width: 12px;
+    height: 12px;
+    margin: 10px 4px 0 0;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.green {
+    background-color: #3BB662 !important;
+}
+
+.red {
+    background-color: #E75448 !important;
+}
+
+.yellow {
+    background-color: #E5C30F !important;
+}
+
+.terminal-container {
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto 0 14px 0;
+    position: relative;
+}
+
+.terminal-fixed-top {
+    margin-top: 30px;
+}
+
+.terminal-home {
+    background-color: #30353A;
+    padding: 1.5em 1em 1em 2em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #FAFAFA;
+}
+
+/* console css */
+
+@media screen and (max-width: 480px){
+    .to-1-col{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 680px){
+    .to-1-col-tablet{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 920px){
+    .to-1-col-wide{
+        grid-template-columns: 1fr;
+    }
 }

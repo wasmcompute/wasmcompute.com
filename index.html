@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <div class='hero w-80'>
-        <div class="grid col-2">
+        <div class="grid col-2 to-1-col">
             <div class="hero-text">
                 <h1>
                     WASM-compute
@@ -46,7 +46,7 @@
                     Request a demo
                 </button>
             </div>
-            <img class="hero-img" src="img/pixeltrue-web-development-1.svg"
+            <img class="" src="img/pixeltrue-web-development-1.svg"
                 alt="illustration of a programmer with multiple screens">
         </div>
 
@@ -57,7 +57,7 @@
     </div>
 
     <div class='hero w-80'>
-        <div class="grid col-2">
+        <div class="grid col-2 to-1-col-tablet">
             <div class="hero-text">
                 <h2 class="number">
                     1
@@ -77,7 +77,7 @@
 
 
     <div class='hero w-80'>
-        <div class="grid col-2">
+        <div class="grid col-2 to-1-col-tablet">
             <img class="hero-img" src="img/pixeltrue-data-analyse-1.svg"
                 alt="An illustrated character is looking at a chart, a cat is sitting next to the person">
             <div class="hero-text">
@@ -98,8 +98,8 @@
         </div>
     </div>
 
-    <div class='hero w-80'>
-        <div class="grid col-2">
+    <div class='hero w-80 mb-5'>
+        <div class="grid col-2 to-1-col-tablet">
             <div class="hero-text">
                 <h2 class="number">
                     3
@@ -117,7 +117,7 @@
                 </ul>
             </div>
 
-            <img class="hero-img" src="img/pixeltrue-teaching-1.svg"
+            <img class="hero-img mb-5" src="img/pixeltrue-teaching-1.svg"
                 alt="illustration of a person with purple hair working on their laptop, generating an idea.">
         </div>
     </div>
@@ -126,29 +126,44 @@
         <h1 class="centered mt-5">
             How does it work?
         </h1>
-        <div class="grid col-3 mt-5">
+        <div class="grid col-3 mt-5 to-1-col-tablet">
             <div class="centered ">
                 <img class="icon" src="img/code-icon.svg" alt="icon computer and code">
-                <h2>Lorem ipsum</h2>
+                <h2 class="w-70 centered"> Use Popular Languages like Rust, C and C++</h2>
             </div>
             <div class="centered ">
                 <img class="icon" src="img/time-icon.svg" alt="icon timer">
-                <h2>Lorem ipsum</h2>
+                <h2 class="w-70 centered">Deploy backend and frontend Application in seconds</h2>
             </div>
             <div class="centered ">
                 <img class="icon" src="img/networking-icon.svg" alt="icon computers and cloud file upload">
-                <h2>Lorem ipsum</h2>
+                <h2 class="w-70 centered">Deploy anywhere On Any Server</h2>
             </div>
         </div>
 
     </div>
     <div class='hero w-80 mt-10'>
-        <div class="grid col-2">
+        <div class="grid col-2 to-1-col-wide">
 
             <h1 class="hero-text">
                 And all you need is just a command line!
             </h1>
-            <img class="hero-img mt-4" src="img/project-upload.svg">
+            <div class="terminal-container terminal-fixed-top">
+                <header class="terminal">
+                  <span class="button red"></span>
+                  <span class="button yellow"></span>
+                  <span class="button green"></span>
+                </header>
+              
+                <div class="terminal-home ">					
+                  <p class="console">=> $ wasmcompute-cli publish</p>
+                  <p class="console">   Compressing project files….       100%. 34.5 MB</p>
+                  <p class="console">   Run `rails server -h` for more startup options</p>
+                  <p class="console">   Uploading project files….            100% 34.5 MB</p>
+                  <p class="console">   Project has successfully uploads :)</p>
+                  <p class="console">   Visit http://company.wasmcompute.com/next-big-idea to view your project</p>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -165,8 +180,33 @@
             <input type="submit" class="primary" value="Submit">
           </form>
     </div>
-    <footer>
-
+    <footer class="mt-3">
+        <div class='no-overflow'>
+            <img src="img/divider-downward.svg" class="img-divider">
+        </div>
+        <div class="grid col-2 w-80 to-1-col-tablet">
+                <img class=" w-30 centered" src="img/w-compute-logo-sharp-edges_1.svg" alt="wasm-compute logo">
+                <div>
+                    <h2>WASM-compute</h2>
+                    <p>Tool for developers to deploy their code</p>
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">pricing</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                documentation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        
     </footer>
 </body>
 

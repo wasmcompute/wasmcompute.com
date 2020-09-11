@@ -1,0 +1,19 @@
+account: alecdivito
+application: docs
+static_file_base_url: /static
+readme: README.md
+migrations:
+static_files:
+  - ./static/main.css
+template_files:
+  - ./documents/todo.md
+  - ./documents/README.md
+  - ./documents/design/cli.md
+  - ./documents/design/dependancies.md
+  - ./documents/design/library.md
+  - ./documents/design/projecfile.md
+  - ./documents/design/wasmcore.md
+  - ./documents/design/web_server.md
+  - ./documents/examples/docs.md
+  - ./documents/examples/pastebin.md
+  - ./documents/examples/url_shortener.md

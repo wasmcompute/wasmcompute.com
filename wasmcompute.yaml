@@ -5,7 +5,12 @@ readme: README.md
 migrations:
 static_files:
   - ./static/main.css
+  - ./static/tachyons.min.css
+  - ./static/img/logo.svg
 template_files:
+  - ./README.md
+  - ./templates/template.html
+  - ./templates/404.html
   - ./documents/todo.md
   - ./documents/README.md
   - ./documents/design/cli.md

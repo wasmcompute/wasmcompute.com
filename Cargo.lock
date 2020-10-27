@@ -467,12 +467,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a143597ca7c7793eff794def352d41792a93c481eb1042423ff7ff72ba2c31f"
 
 [[package]]
+name = "wasm-types"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "wasmcompute-lib"
 version = "0.1.0"
 dependencies = [
  "chrono",
  "serde",
  "serde_json",
+ "wasm-types",
 ]
 
 [[package]]

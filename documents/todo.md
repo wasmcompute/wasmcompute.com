@@ -4,17 +4,35 @@ Todo document tracks what I plan to finish on a given day as well as how much
 I actually finish. Because I am working on this project myself this will be able
 to help track my progress.
 
-## Works in progress
+TODO:
 
-| ID  | name             | url                                                       |
-| --- | ---------------- | --------------------------------------------------------- |
-| 1   | backend          | https://github.com/wasmcompute/wasmcompute-web-server     |
-| 2   | frontend         | https://github.com/wasmcompute/wasmcompute.com            |
-| 3   | cli              | https://github.com/wasmcompute/wasmcompute-cli            |
-| 4   | framework        | https://github.com/wasmcompute/wasmcompute-lib            |
-| 5   | framework macros | https://github.com/wasmcompute/wasmcompute-macro          |
-| 6   | infrastructure   | https://github.com/wasmcompute/wasmcompute-infrastructure |
+- Add in way to only keep apps alive for a certain amount of time. Give hashmap ttl
+- Create Terraform scripts to deploy apps on AWS
+- Document process and make sure everything is up to date (wasmcompute.com)
+- Make gatsby site to support frontend and react site to support backend (server on cloud front)
+- Remove html support for API (not technically)
+- Add in github action to compile code to unknown-x64-linux and upload to SS3
+- Start documenting how we are going to design the monitoring system
 
+### Thursday Sept 9
+
+Plan (server)
+
+1. Polished html
+
+### Wednesday Sept 8
+
+Plan (server)
+
+1. Started adding logic 
+
+### Tuesday Sept 7
+
+Plan (server)
+
+1. Redid the logic for running wasm functions. Rewrote lots of logic on how it worked
+2. Added handlebars rendering for html pages
+3. Added Token Authentication
 
 ### Thursday August 26
 

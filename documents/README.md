@@ -88,8 +88,8 @@ The following 2 commands will first build the application and upload it to
 wasmcompute's servers. `Publish` only saves the application there with a version
 tag. Once on the server though, we can then trigger a deployment.
 
-Wasmcompute allows muiltple different versions to be deployed to, thus allowing
-for teams to debug muiltple versions of their applications. However, if a change
+Wasmcompute allows multiple different versions to be deployed to, thus allowing
+for teams to debug multiple versions of their applications. However, if a change
 to the database migrations occur, all pervious applications except for the latest
 one will become `tanited` and wasmcompute will not allow you to deploy them until
 you manually `untaint` them.

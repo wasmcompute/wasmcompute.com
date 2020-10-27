@@ -13,12 +13,14 @@ template_files:
   - ./templates/404.html
   - ./documents/todo.md
   - ./documents/README.md
+  - ./documents/design/README.md
   - ./documents/design/cli.md
   - ./documents/design/dependancies.md
   - ./documents/design/library.md
-  - ./documents/design/projecfile.md
+  - ./documents/design/projectfile.md
   - ./documents/design/wasmcore.md
   - ./documents/design/web_server.md
+  - ./documents/examples/README.md
   - ./documents/examples/docs.md
   - ./documents/examples/pastebin.md
   - ./documents/examples/url_shortener.md

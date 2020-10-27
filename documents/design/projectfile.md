@@ -20,3 +20,8 @@ application_files:
   - views/layout.html
   - views/table.html
 ```
+
+## wasmcompute-config-validator
+
+This library is used to validate the config file on the client send and server
+side to make sure users don't make any mistakes. The following is what it validates.
